@@ -39,7 +39,6 @@ void setup() {
 
   pinMode(pinPorcentaje60VA, OUTPUT);
 
-  pinMode(pinRecomendadoF, OUTPUT);
 
   pinMode(pinPorcentaje40VA, OUTPUT);
 
@@ -775,16 +774,9 @@ void prenderPorcentaje100Fra(float voltaje) {
   analogWrite(pinPorcentaje100VF, voltaje*255);
 }
 
-void prenderObligatorio(){
-digitalWrite(pinObligatorioF,HIGH);
-  
-}
 
 
-void prenderRecomendado(){
-digitalWrite(pinRecomendadoF,HIGH);
-  
-}
+
 
 void apagarOsoArg(){
 
@@ -831,5 +823,8 @@ digitalWrite(pinRele,LOW);
 delay(2000);
 
 }
+void prenderLedVacunaArg(){
 
+  digitalWrite(pinVacunaLed,HIGH);
+}
 
