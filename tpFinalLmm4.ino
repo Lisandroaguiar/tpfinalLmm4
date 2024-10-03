@@ -1,5 +1,5 @@
 int pinPorcentaje60VF, pinPorcentaje80VF, pinObligatorioF, pinPorcentaje100VF,
-  pinPorcentaje60VA, pinRecomendadoF, pinPorcentaje40VA, pinPorcentaje80VA, 
+  pinPorcentaje60VA, pinVacunaLed, pinPorcentaje40VA, pinPorcentaje80VA, 
   pinPorcentaje100VA, pinOsoArg, pinVacunaBotonA, pinVacunaBotonF, pinCalendario,pinRele;
   
 int estado;
@@ -17,7 +17,7 @@ void setup() {
   pinRele=4;  
   pinPorcentaje100VF = 5;
   pinPorcentaje60VA = 6;
-  pinRecomendadoF = 7;
+  pinVacunaLed = 7;
   pinPorcentaje40VA = 8;
   pinPorcentaje80VA = 9;
   pinPorcentaje100VA = 10;
@@ -33,7 +33,7 @@ void setup() {
   
   pinMode(pinPorcentaje80VF, OUTPUT);
   
-  pinMode(pinObligatorioF, OUTPUT);
+  pinMode(pinVacunaLed, OUTPUT);
 
   pinMode(pinPorcentaje100VF, OUTPUT);
 
